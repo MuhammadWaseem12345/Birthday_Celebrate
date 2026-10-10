@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Farkhanda 🎂</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgm" src="musicforpage.mp4" loop preload="auto"></audio>
+<button id="mute" aria-label="Music on/off" title="Music on/off">🔊</button>
+
+<canvas id="stars"></canvas>
+<canvas id="fx"></canvas>
+
+<div id="gate">
+  <div style="font-size:3.4rem">🎁</div>
+  <h2 class="script" style="font-size:2rem;margin:0;color:var(--gold)">A special surprise for you</h2>
+  <p style="margin:0;opacity:.85">Tap the button to open it</p>
+  <button class="btn" id="go">Open your surprise</button>
+  <div id="cnt" class="script" style="display:none;font-size:5.5rem;color:var(--gold);min-height:7rem"></div>
+</div>
+
+<main id="app">
+  <h1 id="title" style="min-height:1.3em">Happy Birthday, Farkhanda!</h1>
+  <p class="sub" id="cdn">15th October · a day made for you 🎉</p>
+
+  <div class="frame">
+    <div class="crown">👑</div>
+    <div class="slot" id="slot" tabindex="0" role="button" aria-label="Add photo">
+      <span style="font-size:2.4rem"><img src="farankhada.jpeg" alt="Farkhanda!"> </span><span>Add her photo here</span>
+    </div>
+  </div>
+  <input type="file" id="pic" accept="image/*" hidden>
+  <!-- <p class="hint" id="phint">Tap the circle to choose a photo</p> -->
+  <div class="adj" id="adj"><label><span>Move photo</span><input type="range" id="py" min="0" max="100" value="12" aria-label="Move photo up or down"></label><label><span>Zoom</span><input type="range" id="zm" min="100" max="220" value="100" aria-label="Zoom photo"></label></div>
+
+  <div class="panel">
+    <h3>To My Dearest Farkhanda</h3>
+    <p>Today isn't just another calendar date—it's a celebration of the day the world was blessed with you. Ever since you came into my life, every moment has been brighter, warmer, and infinitely more meaningful.</p>
+    <p>I created this page just for you as a small reminder of how deeply cherished you are. Happy Birthday, my love! 🌹✨</p>
+  </div>
+
+  <img id="bcard" src="card.jpg" alt="" style="display:none">
+
+  <h3 class="script" style="color:var(--gold);font-size:1.6rem;margin:0 0 14px">Reasons You Mean the World to Me</h3>
+  <div class="reasons" style="margin-bottom:28px">
+    <div class="rc"><div class="e">💖</div><b>Your Smile</b><span>The easiest way to brighten even my most difficult days.</span></div>
+    <div class="rc"><div class="e">🌸</div><b>Your Kindness</b><span>You possess a heart that is just as pure and beautiful as your smile.</span></div>
+    <div class="rc"><div class="e">🤝</div><b>Your Support</b><span>Thank you for always understanding me and standing by my side.</span></div>
+  </div>
+
+
+  <div class="panel">
+    <h3>My Prayers for You</h3>
+    <p style="text-align:center">Farkhanda, on this blessed 15th of October, my heart is filled with prayers for you:</p>
+    <ul class="pr">
+      <li><span class="e">🤲</span>May Allah bless you with long life, perfect health, and peace of mind.</li>
+      <li><span class="e">🌟</span>May every dream and wish in your heart be fulfilled with ease and success.</li>
+      <li><span class="e">😄</span>May your life be filled with endless joy, true happiness, and laughter.</li>
+      <li><span class="e">✨</span>May Allah always protect you from every harm and keep your heart content.</li>
+    </ul>
+  </div>
+
+  <p class="hint" style="margin-bottom:12px">Tap each gift to open a surprise 🎁</p>
+  <div class="grid" id="grid"></div>
+
+  <div class="panel" style="text-align:center"><h3>Make a Wish</h3><div class="cake" id="cake"><div class="cd"><i></i><i></i><i></i><i></i><i></i></div><div class="t1"></div><div class="t2"></div></div><p id="wmsg" style="text-align:center;margin:0">Close your eyes, make a wish, then tap the cake to blow out the candles 🎂</p></div>
+  <section class="endwrap" id="endwrap">
+    <div class="env" id="eenv" role="button" tabindex="0" aria-label="Open the last envelope"><div class="back"></div><div class="letter"></div><div class="front"></div><div class="flap"></div><div class="seal">💌</div></div>
+    <p class="hint" id="ehint">One last surprise… 💌</p>
+    <div class="sigcard" id="sigcard"><img id="asadimg" src="asad.jpg" alt="Asad"><p>With all my love and prayers,</p><div class="script">Regards, Asad ❤️</div></div>
+  </section>
+</main>
+
+<div class="modal" id="modal"><div class="box" id="box"></div></div>
+<input type="file" id="lpick" accept="image/*" hidden>
+
+<script src="script.js"></script>
+</body>
+</html>
